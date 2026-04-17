@@ -1,3 +1,5 @@
-version=3
-opts=dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$// \
-https://github.com/jqlang/jq/tags .*/jq-(\d[\d\.]*)\.tar\.gz
+Version: 5
+Template: GitHub
+Owner: jqlang
+Project: jq
+Download-Url-Mangle: s%https://api.github.com/repos/([^/]+)/@PACKAGE@/git/refs/tags/@PACKAGE@-@ANY_VERSION@%https://github.com/$1/@PACKAGE@/releases/download/@PACKAGE@-$2/@PACKAGE@-$2.tar.gz%g
