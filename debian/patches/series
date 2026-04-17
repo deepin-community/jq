@@ -1,4 +1,10 @@
-get-version.patch
-dont-distribute-duplicate-docs.patch
-0008-Do-not-use-venderized-oniguruma.patch
-0006-Do-not-use-pipenv-to-build-docs.patch
+0000-get-version.patch
+0001-Do-not-distribute-duplicate-docs.patch
+0002-Do-not-use-venderized-oniguruma.patch
+0003-Do-not-use-pipenv-to-build-docs.patch
+CVE-2026-32316.patch
+CVE-2026-33947.patch
+CVE-2026-33948.patch
+CVE-2026-39956.patch
+CVE-2026-39979.patch
+CVE-2026-40164.patch
