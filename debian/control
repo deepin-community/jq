@@ -1,6 +1,5 @@
 Source: jq
 Section: utils
-Priority: optional
 Maintainer: ChangZhuo Chen (陳昌倬) <czchen@debian.org>
 Build-Depends: debhelper-compat (= 13),
                bison,
@@ -8,13 +7,12 @@ Build-Depends: debhelper-compat (= 13),
                libonig-dev,
                libtool,
                python3-jinja2:native,
-               python3-yaml:native,
-               python3-markdown,
-               python3-lxml:native,
                python3-jsonschema:native,
-               valgrind [amd64] <!nocheck>,
-Standards-Version: 4.7.2
-Rules-Requires-Root: no
+               python3-lxml:native,
+               python3-markdown,
+               python3-yaml:native,
+               valgrind [amd64] <!nocheck>
+Standards-Version: 4.7.4
 Homepage: https://jqlang.github.io/jq
 Vcs-Git: https://salsa.debian.org/debian/jq.git
 Vcs-Browser: https://salsa.debian.org/debian/jq
@@ -22,9 +20,7 @@ Vcs-Browser: https://salsa.debian.org/debian/jq
 Package: jq
 Architecture: any
 Multi-Arch: foreign
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         libjq1 (= ${binary:Version})
+Depends: libjq1 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: lightweight and flexible command-line JSON processor
  jq is like sed for JSON data – you can use it to slice
  and filter and map and transform structured data with
@@ -40,10 +36,10 @@ Description: lightweight and flexible command-line JSON processor
  you’d expect.
 
 Package: libjq1
+Section: libs
 Architecture: any
 Multi-Arch: same
-Depends: ${shlibs:Depends},
-         ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: lightweight and flexible command-line JSON processor - shared library
  jq is like sed for JSON data – you can use it to slice
  and filter and map and transform structured data with
@@ -64,9 +60,7 @@ Package: libjq-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         libjq1 (= ${binary:Version})
+Depends: libjq1 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: lightweight and flexible command-line JSON processor - development files
  jq is like sed for JSON data – you can use it to slice
  and filter and map and transform structured data with
