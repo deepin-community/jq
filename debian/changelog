@@ -1,3 +1,10 @@
+jq (1.8.1-7) unstable; urgency=high
+
+  * Cherry-pick upstream fix for CVE-2026-47770.
+  * d/patches: Add no-forwarded for all upstream fixes.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Wed, 27 May 2026 21:19:20 +0800
+
 jq (1.8.1-6) unstable; urgency=high
 
   * Cherry-pick upstream fix for the following CVE (Closes: #1136445):
