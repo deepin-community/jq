@@ -1,11 +1,15 @@
-jq (1.8.1-7) unstable; urgency=high
+jq (1.8.1-6) unstable; urgency=high
 
-  * Cherry-pick upstream fix for the following CVE:
+  * Cherry-pick upstream fix for the following CVE (Closes: #1136445):
     * CVE-2026-40612
+    * CVE-2026-41256
+    * CVE-2026-41257
     * CVE-2026-43894
-    * CVE-2026-47770
+    * CVE-2026-43895
+    * CVE-2026-43896
+    * CVE-2026-44777
 
- -- deepin-ci-robot <packages@deepin.org>  Thu, 04 Jun 2026 17:08:00 +0800
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sun, 17 May 2026 01:00:50 +0800
 
 jq (1.8.1-5) unstable; urgency=medium
 
