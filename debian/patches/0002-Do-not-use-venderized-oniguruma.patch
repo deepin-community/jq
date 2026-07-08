@@ -9,10 +9,10 @@ Forwarded: not-needed
  1 file changed, 8 deletions(-)
 
 diff --git a/Makefile.am b/Makefile.am
-index 7387506..d4c6bbb 100644
+index dbfe83a..1d0f4f5 100644
 --- a/Makefile.am
 +++ b/Makefile.am
-@@ -189,14 +189,6 @@ jq.1: jq.1.prebuilt
+@@ -194,14 +194,6 @@ jq.1: jq.1.prebuilt
  
  CLEANFILES += jq.1
  
